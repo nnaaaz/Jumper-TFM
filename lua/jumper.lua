@@ -54,8 +54,6 @@ rot_list["jumper"]		= Rotation:New({desc = "Bonus lua maps (extended)", duration
 
 
 function eventInit()
-	if __IS_MAIN_MODULE__ then
-		newgame.SetRotation("jumper")
-		tfm.exec.newGame()
-	end
+	newgame.SetRotation("jumper")
+	tfm.exec.newGame()
 end
